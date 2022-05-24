@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-20 11:00:28 PM"/>
+        <attribute name="created" value="VXNlcjtXSU5ET1dTLVVCODE1VjU7MjAyMi0wNS0yMDswNTowMDoyMSBQTTsyNzI4"/>
+        <attribute name="edited" value="VXNlcjtXSU5ET1dTLVVCODE1VjU7MjAyMi0wNS0yMDsxMTowMDoyOCBQTTsxOzI4NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nilai" type="Integer" array="False" size=""/>
+            <input variable="Nilai"/>
+            <if expression="Nilai &gt;= 100">
+                <then>
+                    <output expression="&quot; Grade A &quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Nilai &gt;=80">
+                        <then>
+                            <output expression="&quot; Grade B &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Nilai &gt;=60">
+                                <then>
+                                    <output expression="&quot; Grade C &quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot; Grade E &quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
